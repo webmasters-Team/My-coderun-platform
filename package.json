@@ -1,0 +1,99 @@
+{
+  "name": "@wanglin1994/code-run",
+  "description": "一个简单的前端代码在线运行平台",
+  "version": "0.2.8",
+  "authors": [
+    {
+      "name": "街角小林",
+      "email": "1013335014@qq.com"
+    },
+    {
+      "name": "理想青年实验室",
+      "url": "http://lxqnsys.com/"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wanglin2/code-run"
+  },
+  "keywords": [
+    "javascript",
+    "code"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "buildConsole": "babel --config-file ./public/console/babel.config.json ./public/console/index.js --out-file ./public/console/compile.js",
+    "buildMonacoWorker": "node ./scripts/buildMonacoWorker.js",
+    "convertTheme": "node ./scripts/convertTheme.js",
+    "createThemeList": "node ./scripts/createThemeList.js",
+    "buildLiveScript": "node ./scripts/buildLiveScript.js",
+    "buildVueSFCCompiler": "node ./scripts/buildVueCompilerSfc.js",
+    "format": "prettier --write src/**"
+  },
+  "dependencies": {
+    "@element-plus/icons": "^0.0.11",
+    "@octokit/core": "^4.2.4",
+    "core-js": "^3.6.5",
+    "cropperjs": "^1.5.12",
+    "dayjs": "^1.10.7",
+    "element-plus": "^1.1.0-beta.12",
+    "eventemitter3": "^4.0.7",
+    "fflate": "^0.8.0",
+    "html2canvas": "^1.3.2",
+    "jszip": "^3.7.1",
+    "livescript": "^1.6.0",
+    "loadjs": "^4.2.0",
+    "monaco-editor": "^0.29.1",
+    "monaco-editor-textmate": "^4.0.0",
+    "monaco-textmate": "^3.0.1",
+    "nprogress": "^0.2.0",
+    "onigasm": "^2.2.5",
+    "resize-observer-polyfill": "^1.5.1",
+    "vscode-theme-to-monaco-theme-web": "^1.0.0",
+    "vue": "^3.3.4",
+    "vue-router": "^4.0.6",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.15.4",
+    "@babel/plugin-transform-strict-mode": "^7.14.5",
+    "@babel/preset-env": "^7.15.6",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.2.37",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "fs-extra": "^7.0.1",
+    "less": "^4.1.1",
+    "less-loader": "^6.2.0",
+    "monaco-editor-webpack-plugin": "^5.0.0",
+    "prettier": "^1.19.1",
+    "vscode-theme-to-monaco-theme-node": "^1.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
