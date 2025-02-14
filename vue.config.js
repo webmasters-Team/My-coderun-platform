@@ -2,7 +2,6 @@ const path = require('path')
 const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin')
 
 module.exports = {
-    base: '/My-coderun-platform'
     publicPath: '/code-run/',
     outputDir: './docs/',
     lintOnSave: false,
